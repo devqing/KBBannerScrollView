@@ -32,4 +32,5 @@
 
 效果图
 
-    ![image](https://github.com/niuniuKobe/KBBannerScrollView/blob/master/KBLoopBannerViewDemo/demo.gif)
+
+![image](https://github.com/niuniuKobe/KBBannerScrollView/blob/master/KBLoopBannerViewDemo/demo.gif)
