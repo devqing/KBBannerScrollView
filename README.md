@@ -2,22 +2,9 @@
 
 使用方法
 
-// 添加bannerview
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:self.bannerView];
-}
-// 创建bannerview
-- (LoopBannerView *)bannerView
-{
-    if (_bannerView == nil) {
-        _bannerView = [[LoopBannerView alloc] initWithFrame:CGRectMake(0, 100, width, 200) imageArray:self.imageArray delegate:self];
-    }
-    return _bannerView;
-}
-// bannerview 回调
+_bannerView = [[LoopBannerView alloc] initWithFrame:CGRectMake(0, 100, width, 200) imageArray:self.imageArray delegate:self];
+
+
 - (void)bannerView:(LoopBannerView *)bannerView didClickImageAtIndex:(int)index
 {
     NSLog(@"----%d",index);
