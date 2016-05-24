@@ -2,29 +2,14 @@
 
 使用方法
 
-#import "ViewController.h"
-#import "LoopBannerView.h"
-
-#define width [UIScreen mainScreen].bounds.size.width
-#define height [UIScreen mainScreen].bounds.size.height
-
-@interface ViewController ()<LoopBannerViewDelegate>
-
-@property (nonatomic, strong) LoopBannerView *bannerView;
-@property (nonatomic, strong) NSMutableArray *imageArray;
-
-@end
-
-@implementation ViewController
-
+// 添加bannerview
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.bannerView];
 }
-
-#pragma mark --getter&setter
+// 创建bannerview
 - (LoopBannerView *)bannerView
 {
     if (_bannerView == nil) {
@@ -32,8 +17,7 @@
     }
     return _bannerView;
 }
-
-#pragma mark --LoopBannerViewDelegate
+// bannerview 回调
 - (void)bannerView:(LoopBannerView *)bannerView didClickImageAtIndex:(int)index
 {
     NSLog(@"----%d",index);
@@ -57,8 +41,6 @@
     }
     return _imageArray;
 }
-
-@end
 
 
 效果图
