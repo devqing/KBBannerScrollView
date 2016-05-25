@@ -1,5 +1,7 @@
 # KBBannerScrollView
 
+优化banner无限滚动，占用更少内存
+
 使用方法
 
     _bannerView = [[LoopBannerView alloc] initWithFrame:CGRectMake(0, 100, width, 200) imageArray:self.imageArray delegate:self];
